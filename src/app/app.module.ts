@@ -9,11 +9,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponentComponent } from './login-component/login-component.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { MenubarModule } from 'primeng/menubar';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { MenuModule } from 'primeng/menu';
+import { UsuarioListagemComponent } from './usuario-listagem/usuario-listagem.component';
+import {TableModule} from 'primeng/table';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponentComponent
+    LoginComponentComponent,
+    HomeComponent,
+    CadastroComponent,
+    UsuarioListagemComponent
   ],
   imports: [
     BrowserModule,
@@ -23,8 +33,11 @@ import { FormsModule } from '@angular/forms';
     ButtonModule,
     HttpClientModule,
     FormsModule,
+    MenubarModule,
+    MenuModule,
+    TableModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
