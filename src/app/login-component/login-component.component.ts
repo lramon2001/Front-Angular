@@ -1,3 +1,5 @@
+import { LoginService } from './../login.service';
+import { Login } from './../objetos/Login';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loginService:LoginService) { }
 
   ngOnInit(): void {
     
+  }
+
+  login: Login = new Login("","");
+
+  logar() {
+    this.loginService.logar(this.login).subscribe();
   }
 
 }
