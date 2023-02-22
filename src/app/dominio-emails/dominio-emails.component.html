@@ -1,0 +1,21 @@
+<app-home></app-home>
+
+
+<div>
+ 
+
+</div>
+<p-table [value]="dominios">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-dominio let-i="index">
+        <tr *ngFor="let dominio of dominios; let i = index">
+            <td>{{contador + i}}</td>
+            <td>{{dominio.provedor}}</td>
+        </tr>
+    </ng-template>
+</p-table>

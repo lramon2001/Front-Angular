@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
@@ -10,7 +11,7 @@ export class AppComponent implements OnInit {
 
   title = 'hackathon-angular';
   items: MenuItem[];
-
+  constructor(private router :Router) { }
   ngOnInit(): void {
     this.items = [{
       label: 'Options',
@@ -41,5 +42,6 @@ export class AppComponent implements OnInit {
           }
         ]}
     ];
+    this.router.navigate(['/login']);
   }
 }

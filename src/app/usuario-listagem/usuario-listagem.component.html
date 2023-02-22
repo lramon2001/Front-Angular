@@ -1,3 +1,19 @@
+<app-home></app-home>
+<div>
+    <div class="row">
+        <span class="p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input type="text" pInputText [(ngModel)]="nomePesquisa" placeholder="Search">
+        </span>
+        <label for="frutas" class="label-select" class="custom-select">Mês:</label>
+        <select id="frutas" name="frutas" [(ngModel)] ="mesPesquisa">
+            <option *ngFor ="let mes of meses" [value]="mes.id" >{{mes.descricao}}</option>
+        </select>
+        <button pButton type="button" label="Nomes" (click)="listar()"></button>
+        <button pButton type="button" label="Aniversarios" (click)="listarAniversariantes()"></button>
+    </div>
+
+</div>
 <p-table [value]="usuarios">
     <ng-template pTemplate="header">
         <tr>
@@ -19,12 +35,12 @@
             <td>{{usuario.nome}}</td>
             <td>{{usuario.login}}</td>
             <td>{{usuario.email}}</td>
-            <td>{{usuario.dataNascimento}}</td>
-            <td>{{usuario.dataAtualizacao}}</td>
+            <td>{{usuario.dataNascimento | date: "dd/MM/yyyy HH:mm:ss"}} </td>
+            <td>{{usuario.dataAtualizacao }}</td>
             <td>{{usuario.dataCriacao}}</td>
             <td>
                 <button pButton type="button" label="Excluir" (click)="excluirItem(usuario.id)"></button> <p-button
-                    label="Editar"></p-button>
+                    label="Editar" (click)="editar(usuario.id)"></p-button>
             </td>
         </tr>
     </ng-template>

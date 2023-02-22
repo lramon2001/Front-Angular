@@ -2,7 +2,7 @@
     <div class="p-grid p-fluid">
         <div class="p-col-12 p-md-4">
             <div class="p-inputgroup">
-                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                <span class="p-inputgroup-addon"> <i class="pi pi-user"> </i></span>
                 <input type="text" pInputText placeholder="Username" [(ngModel)]="login.login">
             </div>
             <br>
@@ -14,5 +14,6 @@
             </div>
         </div>
         <br>
-        <button pButton pRipple type="button" label="Primary" (click)="logar()">Logar</button>
+        <button pButton pRipple type="button"  (click)="logar()">Logar</button>
+        <button pButton pRipple type="button"  (click)="navegarParaCadastro()">Cadastrar-se</button>
     </div>

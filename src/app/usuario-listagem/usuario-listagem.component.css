@@ -1,0 +1,40 @@
+
+.p-datatable {
+    background-color: #fff;
+  }
+  
+  .p-button-danger {
+    background-color: #f0ad4e;
+    color: #fff;
+  }
+  
+  .p-button-warning {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+  
+  .custom-select {
+    appearance: none; /* Remove as bordas padrão do elemento */
+    padding: 0.5rem 1rem; /* Adiciona um pouco de padding para ficar mais espaçado */
+    border-radius: 0.25rem; /* Adiciona um pouco de borda arredondada */
+    border: 1px solid #ced4da; /* Adiciona uma borda */
+    background-color: #fff; /* Define a cor de fundo como branco */
+    font-size: 1rem; /* Define o tamanho da fonte */
+    line-height: 1.5; /* Define a altura da linha */
+    color: #495057; /* Define a cor do texto */
+  }
+  
+  .custom-select::-ms-expand {
+    display: none; /* Remove a seta do elemento no IE e Edge */
+  }
+  
+  .custom-select:focus {
+    border-color: #80bdff; /* Adiciona uma borda quando o elemento é focado */
+    outline: 0; /* Remove o contorno padrão do elemento */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Adiciona um sombreamento quando o elemento é focado */
+  }
+  
+  .label-select {
+    margin-right: 0.5rem; /* Adiciona um pouco de espaço entre a label e o select */
+  }
+  

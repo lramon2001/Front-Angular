@@ -15,6 +15,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { MenuModule } from 'primeng/menu';
 import { UsuarioListagemComponent } from './usuario-listagem/usuario-listagem.component';
 import {TableModule} from 'primeng/table';
+import { DominioEmailsComponent } from './dominio-emails/dominio-emails.component';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import {TableModule} from 'primeng/table';
     LoginComponentComponent,
     HomeComponent,
     CadastroComponent,
-    UsuarioListagemComponent
+    UsuarioListagemComponent,
+    DominioEmailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,7 @@ import {TableModule} from 'primeng/table';
     FormsModule,
     MenubarModule,
     MenuModule,
-    TableModule
+    TableModule,
   ],
   providers: [ ],
   bootstrap: [AppComponent]

@@ -1,6 +1,54 @@
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.p-grid {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.p-inputgroup-addon {
+  background-color: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.p-inputgroup input[type="text"],
+.p-inputgroup input[type="password"] {
+  border: none;
+  border-radius: 0 5px 5px 0;
+  box-shadow: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button {
+  background-color: #2196F3;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+}
+.p-inputgroup-addon i {
+  color: #444444;
+}
+button:hover {
+  background-color: #1976D2;
+}

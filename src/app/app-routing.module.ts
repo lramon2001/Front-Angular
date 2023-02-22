@@ -1,3 +1,4 @@
+import { DominioEmailsComponent } from './dominio-emails/dominio-emails.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
 import { NgModule, OnInit } from '@angular/core';
 import { RouterModule, Routes,Router } from '@angular/router';
@@ -10,8 +11,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponentComponent},
   { path: 'home', component: HomeComponent},
   { path: 'cadastrar', component: CadastroComponent},
+  { path: 'cadastrar/:id', component: CadastroComponent},
   { path: 'usuarios', component: UsuarioListagemComponent},
-  { path: 'usuarios/:id', component: UsuarioListagemComponent}
+  { path: 'usuarios/:id', component: UsuarioListagemComponent},
+  { path: 'dominios', component: DominioEmailsComponent}
 ];
 
 @NgModule({
